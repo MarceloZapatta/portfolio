@@ -8,6 +8,10 @@ $white: $warning;
 @import '~bulma-pageloader';
 $white: #FFF;
 
+body, html {
+  overflow: hidden;
+}
+
 .has-background-dark-opacity {
   background: rgb(0, 0, 0, 0.7);
 }
