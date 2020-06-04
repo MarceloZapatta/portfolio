@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/MarceloZapatta/portfolio#readme",
   "dependencies": {
+    "animate.css": "^4.1.0",
     "bulma": "^0.8.2",
     "bulma-pageloader": "^0.3.0",
     "typer-js": "^5.3.0"

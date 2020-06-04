@@ -19,6 +19,7 @@ typer(ocupacaoSubtitle, {
     .repeat(Infinity);
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    console.log(document.getElementById('page-loader'));
-    document.getElementById('page-loader').classList.remove('is-active');
+    setTimeout(() => {
+        document.getElementById('page-loader').classList.remove('is-active');
+    }, 500);
 });
