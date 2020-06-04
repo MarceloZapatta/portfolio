@@ -1,0 +1,16 @@
+@import 'sass/variables';
+@import '~bulma/bulma';
+@import './sass/main-video.scss';
+@import './sass/main-loading.scss';
+
+$white: $warning;
+@import '~bulma-pageloader';
+$white: #FFF;
+
+.has-background-dark-opacity {
+  background: rgb(0, 0, 0, 0.7);
+}
+
+#ocupacao-subtitle {
+  min-height: 30px;
+}

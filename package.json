@@ -1,0 +1,43 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio pessoal",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "prod": "npx webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarceloZapatta/portfolio.git"
+  },
+  "keywords": [
+    "marcelo",
+    "zapatta",
+    "portfolio"
+  ],
+  "author": "Marcelo Zapatta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarceloZapatta/portfolio/issues"
+  },
+  "homepage": "https://github.com/MarceloZapatta/portfolio#readme",
+  "dependencies": {
+    "bulma": "^0.8.2",
+    "bulma-pageloader": "^0.3.0",
+    "typer-js": "^5.3.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "sass": "^1.26.6",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devServer": {
+    "disableHostCheck": true
+  }
+}

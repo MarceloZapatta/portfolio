@@ -1,0 +1,24 @@
+#main-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99999;
+
+
+  &.is-loading {
+    &:after {
+      @include loader;
+      color: blue;
+      fill: blue;
+      stroke: blue;
+      position: fixed;
+      top: calc(50% - 2.5em);
+      left: calc(50% - 2.5em);
+      width: 5em;
+      height: 5em;
+      border-width: 0.25em;
+    }
+  }
+}
