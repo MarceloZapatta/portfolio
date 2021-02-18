@@ -10,11 +10,8 @@ typer(ocupacaoSubtitle, {
     max: 100
 })  
     .cursor(true)
-    .line('Desenvolvedor Fullsta')
-    .back(3)
-    .pause(500)
-    .continue('stack')
-    .pause(1000)
+    .line('Desenvolvedor Fullstack')
+    .pause(1500)
     .back('all')
     .repeat(Infinity);
 

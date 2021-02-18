@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 -256 1792 1792"
+   id="svg3025"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   width="100%"
+   height="100%"
+   sodipodi:docname="phone_sign_font_awesome.svg"
+   fill="white">
+  <metadata
+     id="metadata3035">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3033" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3031"
+     showgrid="false"
+     inkscape:zoom="0.13169643"
+     inkscape:cx="896"
+     inkscape:cy="896"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3025" />
+  <g
+     transform="matrix(1 0 0 -1 0 1536)"
+     id="g3027">
+    <path
+       d="m 1386.3051,585.98305 q 0,11 -2,16 -3,8 -38.5,29.5 -35.5,21.5 -88.5,49.5 l -53,29 q -5,3 -19,13 -14,10 -25,15 -11,5 -21,5 -18,0 -47,-32.5 -29,-32.5 -57,-65.5 -28,-33 -44.00002,-33 -7,0 -16.5,3.5 -9.5,3.5 -15.5,6.5 -6,3 -17,9.5 -11,6.5 -14,8.5 -99,55 -170.5,126.5 -71.5,71.5 -126.5,170.5 -2,3 -8.5,14 -6.5,11 -9.5,17 -3,6 -6.5,15.5 -3.5,9.5 -3.5,16.5 0,13.00005 20.5,33.50005 20.5,20.5 45,38.5 24.5,18 45,39.5 20.5,21.5 20.5,36.5 0,10 -5,21 -5,11 -15,25 -10,14 -13,19 -3,6 -15,28.5 -12,22.5 -25,45.5 -13,23 -26.5,47.5 -13.5,24.5 -25,40.5 -11.5,16 -16.5,18 -5,2 -16,2 -48,0 -101,-22 -46,-21 -80,-94.5 -34,-73.5 -34,-130.5 0,-16 2.5,-34 2.5,-18 5,-30.5 2.5,-12.5 9,-33 6.5,-20.5 10,-29.5 3.5,-9 12.5,-33.00005 9,-24 11,-30 60,-164 216.5,-320.5 156.5,-156.5 320.5,-216.5 6,-2 30,-11 24.00002,-9 33.00002,-12.5 9,-3.5 29.5,-10 20.5,-6.5 33,-9 12.5,-2.5 30.5,-5 18,-2.5 34,-2.5 57,0 130.5,34 73.5,34 94.5,80 22,53 22,101 z m 256,777.00005 V 402.98305 q 0,-119 -84.5,-203.5 -84.5,-84.5 -203.5,-84.5 H 394.30508 q -119,0 -203.5,84.5 -84.5,84.5 -84.5,203.5 v 960.00005 q 0,119 84.5,203.5 84.5,84.5 203.5,84.5 h 960.00002 q 119,0 203.5,-84.5 84.5,-84.5 84.5,-203.5 z"
+       id="path3029"
+       inkscape:connector-curvature="0"
+       style="fill:white" />
+  </g>
+</svg>
