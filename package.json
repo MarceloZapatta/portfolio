@@ -1,45 +1,27 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Portfólio pessoal",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server",
-    "prod": "npx webpack --mode production",
-    "publish": "git subtree push --prefix dist origin gh-pages"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MarceloZapatta/portfolio.git"
-  },
-  "keywords": [
-    "marcelo",
-    "zapatta",
-    "portfolio"
-  ],
-  "author": "Marcelo Zapatta",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MarceloZapatta/portfolio/issues"
-  },
-  "homepage": "https://github.com/MarceloZapatta/portfolio#readme",
   "dependencies": {
-    "animate.css": "^4.1.0",
-    "bulma": "^0.8.2",
-    "bulma-pageloader": "^0.3.0",
-    "typer-js": "^5.3.0"
-  },
-  "devDependencies": {
-    "css-loader": "^3.5.3",
-    "sass": "^1.26.6",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^4.11.1"
-  },
-  "devServer": {
-    "disableHostCheck": true
+    "@types/node": "20.1.1",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "animate.css": "^4.1.1",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "next": "13.4.1",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.62.1",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
   }
 }
