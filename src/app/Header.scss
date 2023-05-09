@@ -1,0 +1,24 @@
+#Header {
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0 1px 3px #d741a7);
+
+    .logo {
+      filter: drop-shadow(0 1px 3px #d741a7);
+    }
+  }
+
+  .header-item {
+    span {
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      span {
+        color: theme("colors.hoolywood-cerise");
+        filter: drop-shadow(0 1px 3px #d741a7);
+      }
+    }
+  }
+}

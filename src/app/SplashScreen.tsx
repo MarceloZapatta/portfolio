@@ -13,11 +13,10 @@ export default function SplashScreen() {
   return (
     <div
       id="splash-screen"
-      className={`flex text-6xl justify-center items-center bg-night h-screen min-h-screen 
+      className={`flex text-6xl text-white justify-center items-center bg-night h-screen min-h-screen 
       w-screen min-w-screen fixed z-50 ${
         active ? "animate__animated animate__fadeOut animate__delay-4s" : ""
       } ${!active ? "hidden" : ""}`}
-      style={{ color: "white" }}
     >
       <div
         className={`short-logo ${

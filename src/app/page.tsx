@@ -1,10 +1,13 @@
+import Header from "./Header";
+import Home from "./Home";
 import SplashScreen from "./SplashScreen";
 
-export default function Home() {
+export default function Main() {
   return (
-    <main className="min-h-screen min-w-screen">
+    <main className="min-h-full min-w-full">
       <SplashScreen />
-      Eu sou o conteúdo atrás :))
+      <Header />
+      <Home />
     </main>
   );
 }
