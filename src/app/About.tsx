@@ -10,7 +10,7 @@ export default function About(props: AboutProps) {
 
   return (
     <PageTemplate name="About" nextPageName="Skills" onVisible={onVisible}>
-      <div className="flex flex-col gap-3 my-6">
+      <div className="flex flex-col gap-3 my-6 text-base sm:text-xl">
         <p>
           Hi! I am a skilled FullStack developer with 5 years of experience. I’m
           proficient in technologies such as{" "}
