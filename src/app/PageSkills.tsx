@@ -1,6 +1,5 @@
 import PageProps from "@/interfaces/page-props";
 import PageTemplate from "./PageTemplate";
-import Metaballs from "./Metaballs";
 
 export default function PageSkills(props: PageProps) {
   const { onVisible } = props;
