@@ -6,6 +6,7 @@ interface NextPageButtonProps {
 
 export default function NextPageButton(props: NextPageButtonProps) {
   const { children } = props;
+
   return (
     <a href={`/#${children}`} className="mx-auto">
       <Image
