@@ -1,17 +1,18 @@
 interface HeaderItemProps {
   children: string;
+  active: boolean;
 }
 
 export default function HeaderItem(props: HeaderItemProps) {
-  const { children } = props;
+  const { children, active } = props;
 
   return (
     <a
       href={`#${children}`}
-      className="text-white cursor-pointer text-base header-item"
+      className="cursor-pointer text-base header-item text-white"
     >
       ~/
-      <span>{children}</span>$
+      <span className={active ? "text-hoolywood-cerise" : ""}>{children}</span>$
     </a>
   );
 }

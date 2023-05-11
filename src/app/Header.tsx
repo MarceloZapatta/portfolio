@@ -6,15 +6,26 @@ import HeaderMobile from "./HeaderMobile";
 import "./Header.scss";
 import { useState } from "react";
 
+export interface NavItem {
+  name: string;
+  isActive: boolean;
+}
+
 export default function Header() {
-  const navItems = ["Home", "About", "Skills", "Projects", "Contact"];
+  const navItems: NavItem[] = [
+    { name: "Home", isActive: true },
+    { name: "About", isActive: false },
+    { name: "Skills", isActive: false },
+    { name: "Projects", isActive: false },
+    { name: "Contact", isActive: false },
+  ];
   const [mobileHeaderOpen, setMobileHeaderOpen] = useState(false);
 
   return (
     <>
       <nav
         id="Header"
-        className="fixed top-0 flex border-b border-hoolywood-cerise text-xl
+        className="fixed top-0 flex border-b border-hoolywood-cerise z-40 text-xl
     justify-between items-center px-3 bg-night min-w-full h-14"
       >
         <a href="#Home" className="text-white logo">
@@ -33,7 +44,9 @@ export default function Header() {
         />
         <div className="gap-8 items-center hidden lg:flex">
           {navItems.map((navItem) => (
-            <HeaderItem key={navItem}>{navItem}</HeaderItem>
+            <HeaderItem key={navItem.name} active={navItem.isActive}>
+              {navItem.name}
+            </HeaderItem>
           ))}
         </div>
       </nav>

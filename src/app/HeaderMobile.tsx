@@ -1,9 +1,10 @@
 import Image from "next/image";
 import HeaderMobileItem from "./HeaderMobileItem";
 import { useState } from "react";
+import { NavItem } from "./Header";
 
 interface HeaderMobileProps {
-  navItems: string[];
+  navItems: NavItem[];
   show: boolean;
   onClose: () => void;
 }
@@ -23,7 +24,7 @@ export default function HeaderMobile(props: HeaderMobileProps) {
 
   return (
     <nav
-      className={`fixed top-0 min-h-full min-w-full bg-night ${
+      className={`fixed top-0 min-h-full min-w-full bg-night z-50 ${
         show ? "animate__animated animate__slideInRight" : "hidden"
       }
       ${onClosing ? "animate__animated animate__slideOutRight" : ""}`}
@@ -40,7 +41,9 @@ export default function HeaderMobile(props: HeaderMobileProps) {
       <div className="container mx-auto px-11">
         <div className="flex flex-col gap-12 mt-8">
           {navItems.map((navItem) => (
-            <HeaderMobileItem key={navItem}>{navItem}</HeaderMobileItem>
+            <HeaderMobileItem key={navItem.name} active={navItem.isActive}>
+              {navItem.name}
+            </HeaderMobileItem>
           ))}
         </div>
       </div>

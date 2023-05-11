@@ -1,0 +1,61 @@
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -2rem;
+  }
+  30% {
+    margin-top: -2rem;
+  }
+  40% {
+    margin-top: -4rem;
+  }
+  60% {
+    margin-top: -4rem;
+  }
+  70% {
+    margin-top: 0rem;
+  }
+  80% {
+    margin-top: 0rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+#Home {
+  .text-swipe {
+    height: 2rem;
+
+    .text-swipe-container {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      height: 2rem;
+
+      &__word {
+        height: 2rem;
+        &:first-child {
+          animation: text-animation 8s infinite 5s;
+        }
+      }
+    }
+  }
+
+  .big-name {
+    filter: drop-shadow(0 0px 0px #d741a7);
+    transition: filter 0.1s;
+
+    &:hover {
+      filter: drop-shadow(0 1px 6px #d741a7);
+    }
+  }
+}

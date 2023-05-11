@@ -2500,6 +2500,11 @@ typed-array-length@^1.0.4:
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
 
+typer-js@^5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/typer-js/-/typer-js-5.5.3.tgz#38335fd0bc5c3122e3ae5aa8a1edcf4f2b7e4932"
+  integrity sha512-r+bWjynXirPw6ju5oSEoMlbJBRgVdqOAPWABJ+r8lEWc27wgDXinrCOeFGiwiVWLAt3dhmk0YBSc0bmtkHGiMw==
+
 typescript@5.0.4:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.4.tgz#b217fd20119bd61a94d4011274e0ab369058da3b"
