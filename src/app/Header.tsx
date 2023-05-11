@@ -6,19 +6,15 @@ import HeaderMobile from "./HeaderMobile";
 import "./Header.scss";
 import { useState } from "react";
 
-export interface NavItem {
-  name: string;
-  isActive: boolean;
+interface HeaderProps {
+  activePage: string;
 }
 
-export default function Header() {
-  const navItems: NavItem[] = [
-    { name: "Home", isActive: true },
-    { name: "About", isActive: false },
-    { name: "Skills", isActive: false },
-    { name: "Projects", isActive: false },
-    { name: "Contact", isActive: false },
-  ];
+export default function Header(props: HeaderProps) {
+  const { activePage } = props;
+
+  const navItems = ["Home", "About", "Skills", "Projects", "Contact"];
+
   const [mobileHeaderOpen, setMobileHeaderOpen] = useState(false);
 
   return (
@@ -44,14 +40,15 @@ export default function Header() {
         />
         <div className="gap-8 items-center hidden lg:flex">
           {navItems.map((navItem) => (
-            <HeaderItem key={navItem.name} active={navItem.isActive}>
-              {navItem.name}
+            <HeaderItem key={navItem} active={activePage === navItem}>
+              {navItem}
             </HeaderItem>
           ))}
         </div>
       </nav>
       <HeaderMobile
         navItems={navItems}
+        activePage={activePage}
         show={mobileHeaderOpen}
         onClose={() => setMobileHeaderOpen(false)}
       />

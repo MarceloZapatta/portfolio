@@ -4,13 +4,14 @@ import { useState } from "react";
 import { NavItem } from "./Header";
 
 interface HeaderMobileProps {
-  navItems: NavItem[];
+  activePage: string;
+  navItems: string[];
   show: boolean;
   onClose: () => void;
 }
 
 export default function HeaderMobile(props: HeaderMobileProps) {
-  const { navItems, show, onClose } = props;
+  const { navItems, show, onClose, activePage } = props;
   const [onClosing, setOnClosing] = useState(false);
 
   function handleOnClose() {
@@ -41,8 +42,8 @@ export default function HeaderMobile(props: HeaderMobileProps) {
       <div className="container mx-auto px-11">
         <div className="flex flex-col gap-12 mt-8">
           {navItems.map((navItem) => (
-            <HeaderMobileItem key={navItem.name} active={navItem.isActive}>
-              {navItem.name}
+            <HeaderMobileItem key={navItem} active={navItem === activePage}>
+              {navItem}
             </HeaderMobileItem>
           ))}
         </div>

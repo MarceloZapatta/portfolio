@@ -14,7 +14,11 @@ module.exports = {
       },
       colors: {
         night: "#171614",
-        "hoolywood-cerise": "#D741A7",
+        "hoolywood-cerise": {
+          500: "#D741A7",
+          DEFAULT: "#D741A7",
+          600: "#A8247E",
+        },
       },
     },
   },
