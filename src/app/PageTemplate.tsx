@@ -19,15 +19,15 @@ export default function PageTemplate(props: PageTemplateProps) {
   }
 
   return (
-    <ReactVisibilitySensor onChange={handleChangeVisible}>
-      <div
-        id={name}
-        className="flex flex-col justify-between min-h-screen min-w-screen bg-night pt-24 pb-6 text-white"
-      >
+    <div
+      id={name}
+      className="flex flex-col justify-between min-h-screen min-w-screen bg-night pt-24 pb-6 text-white"
+    >
+      <ReactVisibilitySensor onChange={handleChangeVisible}>
         <Breadcomb>{name}</Breadcomb>
-        {children}
-        <NextPageButton>{nextPageName}</NextPageButton>
-      </div>
-    </ReactVisibilitySensor>
+      </ReactVisibilitySensor>
+      {children}
+      <NextPageButton>{nextPageName}</NextPageButton>
+    </div>
   );
 }

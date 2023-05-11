@@ -1,11 +1,8 @@
 import Image from "next/image";
 import PageTemplate from "./PageTemplate";
+import PageProps from "@/interfaces/page-props";
 
-interface AboutProps {
-  onVisible: (currentPage: string) => void;
-}
-
-export default function About(props: AboutProps) {
+export default function PageAbout(props: PageProps) {
   const { onVisible } = props;
 
   return (

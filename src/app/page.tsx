@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import About from "./About";
 import Header from "./Header";
-import Home from "./Home";
 import SplashScreen from "./SplashScreen";
+import PageHome from "./PageHome";
+import PageAbout from "./PageAbout";
+import PageSkills from "./PageSkills";
 
 export default function Main() {
   const [activePage, setActivePage] = useState("Home");
@@ -14,8 +15,9 @@ export default function Main() {
       <SplashScreen />
       <Header activePage={activePage} />
       <div className="container mx-auto px-11 bg-night min-w-screen">
-        <Home onVisible={setActivePage} />
-        <About onVisible={setActivePage} />
+        <PageHome onVisible={setActivePage} />
+        <PageAbout onVisible={setActivePage} />
+        <PageSkills onVisible={setActivePage} />
       </div>
     </main>
   );

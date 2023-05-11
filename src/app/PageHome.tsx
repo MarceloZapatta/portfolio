@@ -1,12 +1,9 @@
-import "./Home.scss";
+import "./PageHome.scss";
 import StringsEffect from "./StringsEffect";
 import PageTemplate from "./PageTemplate";
+import PageProps from "@/interfaces/page-props";
 
-interface HomeProps {
-  onVisible: (currentPage: string) => void;
-}
-
-export default function Home(props: HomeProps) {
+export default function PageHome(props: PageProps) {
   const { onVisible } = props;
 
   return (
