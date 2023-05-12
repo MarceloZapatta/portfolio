@@ -1,7 +1,6 @@
 import Image from "next/image";
 import HeaderMobileItem from "./HeaderMobileItem";
 import { useState } from "react";
-import { NavItem } from "./Header";
 
 interface HeaderMobileProps {
   activePage: string;

@@ -9,7 +9,7 @@ export default function PageAbout(props: PageProps) {
   return (
     <PageTemplate name="About" nextPageName="Skills" onVisible={onVisible}>
       <ReactVisibilitySensor partialVisibility>
-        {({ isVisible }) => (
+        {({ isVisible }: any) => (
           <div
             className={`flex flex-col gap-3 my-6 ${
               isVisible
@@ -39,7 +39,7 @@ export default function PageAbout(props: PageProps) {
         )}
       </ReactVisibilitySensor>
       <ReactVisibilitySensor partialVisibility>
-        {({ isVisible }) => (
+        {({ isVisible }: any) => (
           <a
             href="https://www.linkedin.com/in/marcelo-zapatta/"
             target="_blank"

@@ -8,7 +8,7 @@ export default function PageSkills(props: PageProps) {
   return (
     <PageTemplate name="Skills" nextPageName="Projects" onVisible={onVisible}>
       <ReactVisibilitySensor partialVisibility>
-        {({ isVisible }) => (
+        {({ isVisible }: any) => (
           <div
             className={`my-6 ${
               isVisible

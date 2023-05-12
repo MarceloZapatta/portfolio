@@ -44,7 +44,7 @@ export default function PageProjects(props: PageProps) {
   return (
     <PageTemplate name="Projects" nextPageName="Contact" onVisible={onVisible}>
       <ReactVisibilitySensor partialVisibility>
-        {({ isVisible }) => (
+        {({ isVisible }: any) => (
           <div
             className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4 ${
               isVisible

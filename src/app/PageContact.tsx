@@ -14,7 +14,7 @@ export default function PageContact(props: PageProps) {
       nextPageButtonInverted
     >
       <ReactVisibilitySensor partialVisibility>
-        {({ isVisible }) => (
+        {({ isVisible }: any) => (
           <div
             className={`flex flex-col gap-12 ${
               isVisible

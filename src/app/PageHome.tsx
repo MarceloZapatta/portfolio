@@ -11,7 +11,7 @@ export default function PageHome(props: PageProps) {
       <div className="lg:flex justify-between">
         <div className="text-white text-xl flex-1">
           <div className="w-full animate__animated animate__slideInLeft animate__delay-4s">
-            I'm a{" "}
+            I&apos;m a{" "}
             <span className="sm:hidden">
               <br />
               <span className="text-hoolywood-cerise">Fullstack</span> Developer
