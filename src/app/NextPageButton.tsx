@@ -11,7 +11,7 @@ export default function NextPageButton(props: NextPageButtonProps) {
   return (
     <a
       href={`/#${children}`}
-      className={`mx-auto custom-cursor-pointer ${
+      className={`mx-auto custom-cursor-pointer hover:opacity-70 transition ${
         inverted ? "rotate-180" : ""
       }`}
     >

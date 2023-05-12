@@ -12,7 +12,7 @@ export default function ProjectCard(props: ProjectProps) {
   return (
     <a
       href={url}
-      className={`flex flex-col justify-between border border-r
+      className={`flex flex-col justify-between border border-r custom-cursor-pointer transition
       border-hoolywood-cerise ${image ? "" : "p-3"} hover:opacity-70 h-44`}
       target="_blank"
     >

@@ -28,10 +28,16 @@ export default function PageProjects(props: PageProps) {
     },
     {
       name: "Tempo Real Notícias",
-      description: "A mobile application for booking",
-      technologies: ["Ionic", "Angular"],
+      description: "News portal",
+      technologies: ["Puppeteer", "Next.JS", "Next.JS"],
       image: "/projects/tempo-real-noticias.png",
       url: "https://temporealnoticias.com.br",
+    },
+    {
+      name: "Tem Vegano",
+      description: "In construction",
+      technologies: ["Next.JS"],
+      url: "https://github.com.br",
     },
   ];
 
