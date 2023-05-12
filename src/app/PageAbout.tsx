@@ -44,7 +44,7 @@ export default function PageAbout(props: PageProps) {
             href="https://www.linkedin.com/in/marcelo-zapatta/"
             target="_blank"
             className={`flex py-3 mb-6 px-6 bg-hoolywood-cerise rounded-lg w-fit mx-auto
-            transition hover:bg-hoolywood-cerise-600 ${
+            transition hover:bg-hoolywood-cerise-600 custom-cursor-pointer ${
               isVisible
                 ? "opacity-100 animate__animated animate__slideInRight"
                 : "opacity-0"

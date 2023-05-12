@@ -30,7 +30,7 @@ export default function HeaderMobile(props: HeaderMobileProps) {
       }
       ${onClosing ? "animate__animated animate__slideOutRight" : ""}`}
     >
-      <div className="flex justify-end items-center h-14 text-white border-b border-hoolywood-cerise px-3 cursor-pointer">
+      <div className="flex justify-end items-center h-14 text-white border-b border-hoolywood-cerise px-3 custom-cursor-pointer">
         <Image
           src="/close.svg"
           width={24}

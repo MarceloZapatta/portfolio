@@ -9,7 +9,7 @@ export default function HeaderItem(props: HeaderItemProps) {
   return (
     <a
       href={`#${children}`}
-      className="cursor-pointer text-base header-item text-white"
+      className="custom-cursor-pointer text-base header-item text-white"
     >
       ~/
       <span className={active ? "text-hoolywood-cerise" : ""}>{children}</span>$

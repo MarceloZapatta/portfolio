@@ -24,7 +24,7 @@ export default function Header(props: HeaderProps) {
         className="fixed top-0 flex border-b border-hoolywood-cerise z-40 text-xl
     justify-between items-center px-4 bg-night min-w-full h-14"
       >
-        <a href="#Home" className="text-white logo">
+        <a href="#Home" className="text-white logo custom-cursor-pointer">
           &lt;
           <span className="text-hoolywood-cerise">MarceloZapatta</span>
           /&gt;
@@ -35,7 +35,7 @@ export default function Header(props: HeaderProps) {
           height={24}
           priority
           alt="Menu mobile"
-          className="lg:hidden cursor-pointer"
+          className="lg:hidden custom-cursor-pointer"
           onClick={() => setMobileHeaderOpen(true)}
         />
         <div className="gap-8 items-center hidden lg:flex">

@@ -11,7 +11,9 @@ export default function NextPageButton(props: NextPageButtonProps) {
   return (
     <a
       href={`/#${children}`}
-      className={`mx-auto ${inverted ? "rotate-180" : ""}`}
+      className={`mx-auto custom-cursor-pointer ${
+        inverted ? "rotate-180" : ""
+      }`}
     >
       <Image
         src="/chevron-down.svg"

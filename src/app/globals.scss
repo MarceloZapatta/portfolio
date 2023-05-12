@@ -4,4 +4,30 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: url("/cursor.svg") 10 10, auto;
+}
+
+.custom-cursor-pointer {
+  cursor: url("/cursor-pointer.svg") 10 10, pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: theme("colors.eerie-black");
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: theme("colors.hoolywood-cerise.600");
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.hoolywood-cerise.500");
 }
