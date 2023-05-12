@@ -1,0 +1,46 @@
+import PageProps from "@/interfaces/page-props";
+import PageTemplate from "./PageTemplate";
+import ProjectCard from "./ProjectCard";
+import { Project } from "@/interfaces/project";
+
+export default function PageProjects(props: PageProps) {
+  const { onVisible } = props;
+
+  const projects: Project[] = [
+    {
+      name: "Simple Resource Management",
+      description: "CRUD Example",
+      technologies: ["Laravel", "Vue.JS"],
+      url: "https://github.com/MarceloZapatta/simple-resources-management",
+    },
+    {
+      name: "Lumen API",
+      description: "A REST API example",
+      technologies: ["Laravel", "Lumen"],
+      url: "https://github.com/MarceloZapatta/laravel-api",
+    },
+    {
+      name: "Bookings APP",
+      description: "A mobile application for booking",
+      technologies: ["Ionic", "Angular"],
+      url: "https://github.com/MarceloZapatta/ionic-angular-course",
+    },
+    {
+      name: "Tempo Real Notícias",
+      description: "A mobile application for booking",
+      technologies: ["Ionic", "Angular"],
+      image: "/projects/tempo-real-noticias.png",
+      url: "https://temporealnoticias.com.br",
+    },
+  ];
+
+  return (
+    <PageTemplate name="Projects" nextPageName="Contact" onVisible={onVisible}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
+        {projects.map((project) => (
+          <ProjectCard key={project.name} project={project} />
+        ))}
+      </div>
+    </PageTemplate>
+  );
+}
