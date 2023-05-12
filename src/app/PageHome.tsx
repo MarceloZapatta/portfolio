@@ -9,7 +9,7 @@ export default function PageHome(props: PageProps) {
   return (
     <PageTemplate name="Home" nextPageName="About" onVisible={onVisible}>
       <div className="lg:flex justify-between">
-        <div className="text-white text-2xl flex-1">
+        <div className="text-white text-xl flex-1">
           <div className="w-full animate__animated animate__slideInLeft animate__delay-4s">
             I'm a{" "}
             <span className="sm:hidden">

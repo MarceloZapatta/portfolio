@@ -8,7 +8,7 @@ export default function PageSkills(props: PageProps) {
     <PageTemplate name="Skills" nextPageName="Projects" onVisible={onVisible}>
       <div className="my-6">
         Check out some of my main skills:
-        <div className="pt-6 sm:text-xl">
+        <div className="pt-6">
           &lt;<span className="text-hoolywood-cerise">Skills</span>&gt;
           <br />
           &emsp;&lt;<span className="text-hoolywood-cerise">Backend</span>&gt;
