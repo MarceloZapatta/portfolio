@@ -2,6 +2,7 @@ import PageProps from "@/interfaces/page-props";
 import PageTemplate from "./PageTemplate";
 import ProjectCard from "./ProjectCard";
 import { Project } from "@/interfaces/project";
+import ReactVisibilitySensor from "react-visibility-sensor";
 
 export default function PageProjects(props: PageProps) {
   const { onVisible } = props;
@@ -36,11 +37,21 @@ export default function PageProjects(props: PageProps) {
 
   return (
     <PageTemplate name="Projects" nextPageName="Contact" onVisible={onVisible}>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
-        {projects.map((project) => (
-          <ProjectCard key={project.name} project={project} />
-        ))}
-      </div>
+      <ReactVisibilitySensor partialVisibility>
+        {({ isVisible }) => (
+          <div
+            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4 ${
+              isVisible
+                ? "opacity-100 animate__animated animate__slideInRight"
+                : "opacity-0"
+            }`}
+          >
+            {projects.map((project) => (
+              <ProjectCard key={project.name} project={project} />
+            ))}
+          </div>
+        )}
+      </ReactVisibilitySensor>
     </PageTemplate>
   );
 }
