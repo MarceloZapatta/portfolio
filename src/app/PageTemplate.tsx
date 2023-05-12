@@ -7,10 +7,12 @@ interface PageTemplateProps {
   name: string;
   nextPageName: string;
   children: string | JSX.Element | JSX.Element[];
+  nextPageButtonInverted?: boolean;
 }
 
 export default function PageTemplate(props: PageTemplateProps) {
-  const { onVisible, name, nextPageName, children } = props;
+  const { onVisible, name, nextPageName, children, nextPageButtonInverted } =
+    props;
 
   function handleChangeVisible(isVisible: Boolean) {
     if (isVisible) {
@@ -27,7 +29,13 @@ export default function PageTemplate(props: PageTemplateProps) {
         <Breadcomb>{name}</Breadcomb>
       </ReactVisibilitySensor>
       {children}
-      <NextPageButton>{nextPageName}</NextPageButton>
+      <NextPageButton inverted={nextPageButtonInverted}>
+        {nextPageName}
+      </NextPageButton>
     </div>
   );
 }
+
+PageTemplate.defaultProps = {
+  nextPageButtonInverted: false,
+};

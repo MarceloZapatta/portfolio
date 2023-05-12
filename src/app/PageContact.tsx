@@ -6,7 +6,12 @@ export default function PageContact(props: PageProps) {
   const { onVisible } = props;
 
   return (
-    <PageTemplate name="Contact" nextPageName="Home" onVisible={onVisible}>
+    <PageTemplate
+      name="Contact"
+      nextPageName="Home"
+      onVisible={onVisible}
+      nextPageButtonInverted
+    >
       <div className="flex flex-col gap-12">
         <div className="flex gap-4">
           <Image src="/email.svg" width={24} height={24} alt="email icon" />
