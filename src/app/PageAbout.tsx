@@ -18,21 +18,25 @@ export default function PageAbout(props: PageProps) {
             }`}
           >
             <p>
-              Hi! I am a skilled FullStack developer with 5 years of experience.
-              I’m proficient in technologies such as{" "}
+              Hello! I am a highly skilled FullStack developer with over 5 years
+              of professional experience. My expertise lies in technologies like{" "}
               <span className="text-hoolywood-cerise">Laravel</span> and{" "}
-              <span className="text-hoolywood-cerise">React.JS</span>.
+              <span className="text-hoolywood-cerise">React.JS</span>, which I
+              have mastered through hands-on projects and continuous learning.{" "}
             </p>
             <p>
-              I am passionate about maintaining a vegan lifestyle 🌱, watching
-              TV Shows, and exploring new places around the world ⛰️. I have
-              plans to embrace the digital nomad lifestyle 💻, allowing me to
-              work and travel simultaneously.
+              Apart from my dedication to software development, I am also
+              passionate about maintaining a vegan lifestyle 🌱. In my free
+              time, I enjoy watching TV shows and embarking on adventures to
+              discover new places around the world ⛰️. Inspired by my love for
+              travel and work, I am planing to have an digital nomad lifestyle
+              💻.
             </p>
             <p>
-              Interested in learning more about my background?{" "}
+              If you're interested in delving deeper into my background and
+              experience, I invite you to{" "}
               <span className="text-hoolywood-cerise">
-                Check out my full profile:
+                take a look at my full profile:
               </span>
             </p>
           </div>
