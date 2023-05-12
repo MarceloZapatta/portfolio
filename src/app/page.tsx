@@ -7,6 +7,7 @@ import PageHome from "./PageHome";
 import PageAbout from "./PageAbout";
 import PageSkills from "./PageSkills";
 import PageProjects from "./PageProjects";
+import PageContact from "./PageContact";
 
 export default function Main() {
   const [activePage, setActivePage] = useState("Home");
@@ -20,6 +21,7 @@ export default function Main() {
         <PageAbout onVisible={setActivePage} />
         <PageSkills onVisible={setActivePage} />
         <PageProjects onVisible={setActivePage} />
+        <PageContact onVisible={setActivePage} />
       </div>
     </main>
   );

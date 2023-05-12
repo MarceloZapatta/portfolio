@@ -22,7 +22,7 @@ export default function Header(props: HeaderProps) {
       <nav
         id="Header"
         className="fixed top-0 flex border-b border-hoolywood-cerise z-40 text-xl
-    justify-between items-center px-3 bg-night min-w-full h-14"
+    justify-between items-center px-4 bg-night min-w-full h-14"
       >
         <a href="#Home" className="text-white logo">
           &lt;
