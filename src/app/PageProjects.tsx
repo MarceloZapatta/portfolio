@@ -29,7 +29,7 @@ export default function PageProjects(props: PageProps) {
     {
       name: "Tempo Real Notícias",
       description: "News portal",
-      technologies: ["Puppeteer", "Next.JS", "Next.JS"],
+      technologies: ["Puppeteer", "Nest.JS", "Next.JS"],
       image: "/projects/tempo-real-noticias.png",
       url: "https://temporealnoticias.com.br",
     },

@@ -42,7 +42,10 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={`${firaMono.className} overflow-x-hidden`}>
+      <body
+        className={`${firaMono.className} overflow-x-hidden bg-night`}
+        style={{ overflowY: "hidden" }}
+      >
         {children}
       </body>
     </html>

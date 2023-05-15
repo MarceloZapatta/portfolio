@@ -2,7 +2,6 @@ import PageProps from "@/interfaces/page-props";
 import PageTemplate from "./PageTemplate";
 import Image from "next/image";
 import ReactVisibilitySensor from "react-visibility-sensor";
-import NoiseAbstraction from "./NoiseAbstraction";
 
 export default function PageContact(props: PageProps) {
   const { onVisible } = props;
@@ -82,15 +81,6 @@ export default function PageContact(props: PageProps) {
                   github.com/MarceloZapatta
                 </a>
               </div>
-            </div>
-            <div
-              className={`flex-1 rounded border border-hoolywood-cerise hidden lg:block ${
-                isVisible
-                  ? "opacity-100 animate__animated animate__slideInRight"
-                  : "opacity-0"
-              }`}
-            >
-              <NoiseAbstraction />
             </div>
           </div>
         )}

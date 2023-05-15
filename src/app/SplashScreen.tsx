@@ -6,8 +6,15 @@ import "./SplashScreen.scss";
 export default function SplashScreen() {
   const [active, setActive] = useState(true);
 
+  function toggleScrollBar() {
+    document.getElementsByTagName("body")[0].setAttribute("style", "");
+  }
+
   useEffect(() => {
-    setTimeout(() => setActive(false), 4000);
+    setTimeout(() => {
+      setActive(false);
+      toggleScrollBar();
+    }, 4000);
   }, []);
 
   return (
