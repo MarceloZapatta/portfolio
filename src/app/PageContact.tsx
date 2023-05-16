@@ -2,9 +2,11 @@ import PageProps from "@/interfaces/page-props";
 import PageTemplate from "./PageTemplate";
 import Image from "next/image";
 import ReactVisibilitySensor from "react-visibility-sensor";
+import { useTranslation } from "react-i18next";
 
 export default function PageContact(props: PageProps) {
   const { onVisible } = props;
+  const { t } = useTranslation();
 
   return (
     <PageTemplate

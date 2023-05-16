@@ -1,6 +1,9 @@
+"use client";
+
 import ReactVisibilitySensor from "react-visibility-sensor";
 import Breadcomb from "./Breadcomb";
 import NextPageButton from "./NextPageButton";
+import { useTranslation } from "react-i18next";
 
 interface PageTemplateProps {
   onVisible: (currentPage: string) => void;
@@ -10,9 +13,12 @@ interface PageTemplateProps {
   nextPageButtonInverted?: boolean;
 }
 
+//
+
 export default function PageTemplate(props: PageTemplateProps) {
   const { onVisible, name, nextPageName, children, nextPageButtonInverted } =
     props;
+  const { t } = useTranslation();
 
   function handleChangeVisible(isVisible: Boolean) {
     if (isVisible) {
@@ -22,11 +28,11 @@ export default function PageTemplate(props: PageTemplateProps) {
 
   return (
     <div
-      id={name}
-      className="flex flex-col justify-between min-h-screen min-w-screen bg-night pt-24 pb-6 text-white"
+      id={t(`Menu.${name}`) || ""}
+      className={`flex flex-col justify-between min-h-screen min-w-screen bg-night pt-24 pb-6 text-white page-${name}`}
     >
       <ReactVisibilitySensor onChange={handleChangeVisible}>
-        <Breadcomb>{name}</Breadcomb>
+        <Breadcomb>{t(`Menu.${name}`)}</Breadcomb>
       </ReactVisibilitySensor>
       {children}
       <NextPageButton inverted={nextPageButtonInverted}>

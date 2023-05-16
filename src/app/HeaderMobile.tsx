@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeaderMobileItem from "./HeaderMobileItem";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface HeaderMobileProps {
   activePage: string;
@@ -12,6 +13,7 @@ interface HeaderMobileProps {
 export default function HeaderMobile(props: HeaderMobileProps) {
   const { navItems, show, onClose, activePage } = props;
   const [onClosing, setOnClosing] = useState(false);
+  const { t } = useTranslation();
 
   function handleOnClose() {
     setOnClosing(true);

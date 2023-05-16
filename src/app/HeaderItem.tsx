@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 interface HeaderItemProps {
   children: string;
   active: boolean;
@@ -5,14 +7,18 @@ interface HeaderItemProps {
 
 export default function HeaderItem(props: HeaderItemProps) {
   const { children, active } = props;
+  const { t } = useTranslation();
 
   return (
     <a
-      href={`#${children}`}
+      href={`#${t(["Menu." + children])}`}
       className="custom-cursor-pointer text-base header-item text-white"
     >
       ~/
-      <span className={active ? "text-hoolywood-cerise" : ""}>{children}</span>$
+      <span className={active ? "text-hoolywood-cerise" : ""}>
+        {t([`Menu.${children}`])}
+      </span>
+      $
     </a>
   );
 }

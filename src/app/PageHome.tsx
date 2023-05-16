@@ -2,16 +2,18 @@ import "./PageHome.scss";
 import StringsEffect from "./StringsEffect";
 import PageTemplate from "./PageTemplate";
 import PageProps from "@/interfaces/page-props";
+import { useTranslation } from "react-i18next";
 
 export default function PageHome(props: PageProps) {
   const { onVisible } = props;
+  const { t } = useTranslation();
 
   return (
     <PageTemplate name="Home" nextPageName="About" onVisible={onVisible}>
       <div className="lg:flex justify-between">
         <div className="text-white text-xl flex-1">
           <div className="w-full animate__animated animate__slideInLeft animate__delay-4s">
-            I&apos;m a{" "}
+            {t("Home.intro")}{" "}
             <span className="sm:hidden">
               <br />
               <span className="text-hoolywood-cerise">Fullstack</span> Developer
@@ -44,13 +46,13 @@ export default function PageHome(props: PageProps) {
             /&gt;
           </div>
           <div className="w-full animate__animated animate__slideInLeft animate__delay-4s">
-            transforming{" "}
+            {t("Home.transforming")}{" "}
             <div className="text-hoolywood-cerise text-ideas animate__animated animate__pulse animate__infinite inline-block">
-              ideas
+              {t("Home.ideas")}
             </div>{" "}
-            into{" "}
+            {t("Home.into")}{" "}
             <div className="text-hoolywood-cerise text-products animate__animated animate__pulse animate__infinite inline-block">
-              products
+              {t("Home.products")}
             </div>
           </div>
         </div>

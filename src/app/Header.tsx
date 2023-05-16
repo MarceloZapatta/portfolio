@@ -5,6 +5,7 @@ import HeaderItem from "./HeaderItem";
 import HeaderMobile from "./HeaderMobile";
 import "./Header.scss";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface HeaderProps {
   activePage: string;
@@ -13,9 +14,15 @@ interface HeaderProps {
 export default function Header(props: HeaderProps) {
   const { activePage } = props;
 
+  const { t, i18n } = useTranslation();
+
   const navItems = ["Home", "About", "Skills", "Projects", "Contact"];
 
   const [mobileHeaderOpen, setMobileHeaderOpen] = useState(false);
+
+  function handleChangeLanguage(lang: string) {
+    i18n.changeLanguage(lang);
+  }
 
   return (
     <>
@@ -52,6 +59,21 @@ export default function Header(props: HeaderProps) {
         show={mobileHeaderOpen}
         onClose={() => setMobileHeaderOpen(false)}
       />
+      <div className="text-white fixed bottom-2 right-6">
+        <span
+          onClick={() => handleChangeLanguage("en")}
+          className="custom-cursor-pointer"
+        >
+          EN
+        </span>{" "}
+        |{" "}
+        <span
+          onClick={() => handleChangeLanguage("pt-BR")}
+          className="custom-cursor-pointer"
+        >
+          PT-BR
+        </span>
+      </div>
     </>
   );
 }

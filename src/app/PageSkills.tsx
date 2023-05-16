@@ -1,9 +1,11 @@
 import PageProps from "@/interfaces/page-props";
 import PageTemplate from "./PageTemplate";
 import ReactVisibilitySensor from "react-visibility-sensor";
+import { useTranslation } from "react-i18next";
 
 export default function PageSkills(props: PageProps) {
   const { onVisible } = props;
+  const { t } = useTranslation();
 
   return (
     <PageTemplate name="Skills" nextPageName="Projects" onVisible={onVisible}>
@@ -16,7 +18,7 @@ export default function PageSkills(props: PageProps) {
                 : "opacity-0"
             }`}
           >
-            Check out some of my main skills:
+            {t("Skills.intro")}:
             <div className="pt-6">
               &lt;<span className="text-hoolywood-cerise">Skills</span>&gt;
               <br />

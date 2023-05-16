@@ -2,10 +2,11 @@ import Image from "next/image";
 import PageTemplate from "./PageTemplate";
 import PageProps from "@/interfaces/page-props";
 import ReactVisibilitySensor from "react-visibility-sensor";
+import { useTranslation } from "react-i18next";
 
 export default function PageAbout(props: PageProps) {
   const { onVisible } = props;
-
+  const { t } = useTranslation();
   return (
     <PageTemplate name="About" nextPageName="Skills" onVisible={onVisible}>
       <ReactVisibilitySensor partialVisibility>
@@ -18,25 +19,16 @@ export default function PageAbout(props: PageProps) {
             }`}
           >
             <p>
-              Hello! I am a FullStack developer with over 5 years of
-              professional experience. My expertise lies in technologies like{" "}
-              <span className="text-hoolywood-cerise">Laravel</span> and{" "}
-              <span className="text-hoolywood-cerise">React.JS</span> and many
-              more.
+              {t("About.intro")}{" "}
+              <span className="text-hoolywood-cerise">Laravel</span> {t("and")}{" "}
+              <span className="text-hoolywood-cerise">React.JS</span>{" "}
+              {t("and many more")}.
             </p>
+            <p>{t("About.personal")}.</p>
             <p>
-              Apart from my dedication to software development, I am also
-              passionate about maintaining a vegan lifestyle 🌱. In my free
-              time, I enjoy watching TV shows and embarking on adventures to
-              discover new places around the world ⛰️. Inspired by my love for
-              travel and work, I am planing to have an digital nomad lifestyle
-              💻.
-            </p>
-            <p>
-              If you&apos;re interested in delving deeper into my background and
-              experience, I invite you to{" "}
+              {t("About.cta")}{" "}
               <span className="text-hoolywood-cerise">
-                take a look at my full profile:
+                {t("About.cta-take")}:
               </span>
             </p>
           </div>
@@ -61,7 +53,7 @@ export default function PageAbout(props: PageProps) {
               alt="linkedin icon"
               className="mr-3.5"
             />
-            LinkedIn profile
+            {t("About.buttonLinkedIn")}
           </a>
         )}
       </ReactVisibilitySensor>

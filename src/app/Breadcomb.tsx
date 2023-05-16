@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 interface BreadcombProps {
   children: string;
@@ -6,6 +7,7 @@ interface BreadcombProps {
 
 export default function Breadcomb(props: BreadcombProps) {
   const { children } = props;
+  const { t } = useTranslation();
   return (
     <div className="text-base text-white flex">
       <Image
@@ -15,7 +17,8 @@ export default function Breadcomb(props: BreadcombProps) {
         alt="command line icon"
         className="mr-2"
       />
-      portfolio:~/<span className="text-hoolywood-cerise">{children}</span>$
+      {t("portfolio")}:~/
+      <span className="text-hoolywood-cerise">{children}</span>$
     </div>
   );
 }
