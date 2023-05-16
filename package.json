@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d out"
+    "predeploy": "yarn build && touch out/.nojekyll",
+    "deploy": "gh-pages -t -d out"
   },
   "dependencies": {
     "@types/node": "20.1.1",

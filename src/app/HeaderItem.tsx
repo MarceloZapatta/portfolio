@@ -11,7 +11,7 @@ export default function HeaderItem(props: HeaderItemProps) {
 
   return (
     <a
-      href={`#${t(["Menu." + children])}`}
+      href={`/portfolio/#${t(["Menu." + children])}`}
       className="custom-cursor-pointer text-base header-item text-white"
     >
       ~/

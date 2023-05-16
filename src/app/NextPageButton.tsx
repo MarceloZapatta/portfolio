@@ -12,7 +12,7 @@ export default function NextPageButton(props: NextPageButtonProps) {
 
   return (
     <a
-      href={`#${t("Menu." + children)}`}
+      href={`/portfolio/#${t("Menu." + children)}`}
       className={`mx-auto custom-cursor-pointer hover:opacity-70 transition ${
         inverted ? "rotate-180" : ""
       }`}

@@ -14,7 +14,7 @@ export default function HeaderMobileItem(props: HeaderMobileItemProps) {
   function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     e.preventDefault();
     onClick();
-    window.location.href = `/#${t(["Menu." + children])}`;
+    window.location.href = `/portfolio/#${t(["Menu." + children])}`;
   }
 
   return (

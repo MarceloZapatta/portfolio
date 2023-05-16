@@ -1,6 +1,6 @@
 # Portfolio
 
-This is a portfolio Code + Command Line theme. Developed using Figma, Next.JS, TypeScript, Tailwind, Animate.css and i18next
+This is a portfolio `Code + Command Line` theme. Developed using Figma, Next.JS, TypeScript, Tailwind, Animate.css and i18next
 
 ## How to run
 
@@ -23,7 +23,7 @@ yarn dev
 ```
 
 ```
-Access localhost:3000
+Access localhost:3000/portfolio
 ```
 
 ## Live project
