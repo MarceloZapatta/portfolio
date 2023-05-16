@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 interface NextPageButtonProps {
   children: string;
@@ -7,10 +8,11 @@ interface NextPageButtonProps {
 
 export default function NextPageButton(props: NextPageButtonProps) {
   const { children, inverted } = props;
+  const { t } = useTranslation();
 
   return (
     <a
-      href={`/#${children}`}
+      href={`/#${t("Menu." + children)}`}
       className={`mx-auto custom-cursor-pointer hover:opacity-70 transition ${
         inverted ? "rotate-180" : ""
       }`}
