@@ -29,10 +29,16 @@ export default function PageProjects(props: PageProps) {
       url: "https://github.com/MarceloZapatta/ionic-angular-course",
     },
     {
+      name: "Portfolio",
+      description: "This awesome portfolio!",
+      technologies: ["Next.JS", "Tailwind"],
+      url: "https://github.com/MarceloZapatta/portfolio",
+    },
+    {
       name: "Tempo Real Notícias",
       description: "News portal",
       technologies: ["Puppeteer", "Nest.JS", "Next.JS"],
-      image: "/projects/tempo-real-noticias.png",
+      image: "/portfolio/projects/tempo-real-noticias.png",
       url: "https://temporealnoticias.com.br",
     },
     {
