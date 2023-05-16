@@ -12,13 +12,13 @@ export default function NextPageButton(props: NextPageButtonProps) {
 
   return (
     <a
-      href={`/#${t("Menu." + children)}`}
+      href={`#${t("Menu." + children)}`}
       className={`mx-auto custom-cursor-pointer hover:opacity-70 transition ${
         inverted ? "rotate-180" : ""
       }`}
     >
       <Image
-        src="/chevron-down.svg"
+        src="/portfolio/chevron-down.svg"
         width={24}
         height={24}
         alt="next page button"

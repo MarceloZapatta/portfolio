@@ -33,7 +33,7 @@ export default function ProjectCard(props: ProjectProps) {
         ) : (
           <div>
             <Image
-              src="/folder.svg"
+              src="/portfolio/folder.svg"
               width={24}
               height={24}
               alt="project"

@@ -11,7 +11,7 @@ export default function Breadcomb(props: BreadcombProps) {
   return (
     <div className="text-base text-white flex">
       <Image
-        src="/command.svg"
+        src="/portfolio/command.svg"
         width={24}
         height={24}
         alt="command line icon"

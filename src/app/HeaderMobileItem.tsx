@@ -20,7 +20,7 @@ export default function HeaderMobileItem(props: HeaderMobileItemProps) {
   return (
     <a href="#" className={`flex text-white`} onClick={(e) => handleClick(e)}>
       <Image
-        src="/command.svg"
+        src="/portfolio/command.svg"
         width={24}
         height={24}
         alt="command line icon"

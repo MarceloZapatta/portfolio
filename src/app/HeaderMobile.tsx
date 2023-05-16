@@ -33,7 +33,7 @@ export default function HeaderMobile(props: HeaderMobileProps) {
     >
       <div className="flex justify-end items-center h-14 text-white border-b border-hoolywood-cerise px-3 custom-cursor-pointer">
         <Image
-          src="/close.svg"
+          src="/portfolio/close.svg"
           width={24}
           height={24}
           alt="close navbar"

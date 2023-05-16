@@ -27,7 +27,7 @@ export default function PageContact(props: PageProps) {
             >
               <div className="flex gap-4">
                 <Image
-                  src="/email.svg"
+                  src="/portfolio/email.svg"
                   width={24}
                   height={24}
                   alt="email icon"
@@ -41,7 +41,7 @@ export default function PageContact(props: PageProps) {
               </div>
               <div className="flex gap-4">
                 <Image
-                  src="/phone.svg"
+                  src="/portfolio/phone.svg"
                   width={24}
                   height={24}
                   alt="phone icon"
@@ -55,7 +55,7 @@ export default function PageContact(props: PageProps) {
               </div>
               <div className="flex gap-4">
                 <Image
-                  src="/linkedin-hoolywood-cerise.svg"
+                  src="/portfolio/linkedin-hoolywood-cerise.svg"
                   width={24}
                   height={24}
                   alt="linkedin icon"
@@ -70,7 +70,7 @@ export default function PageContact(props: PageProps) {
               </div>
               <div className="flex gap-4">
                 <Image
-                  src="/github.svg"
+                  src="/portfolio/github.svg"
                   width={24}
                   height={24}
                   alt="github icon"

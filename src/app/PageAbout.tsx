@@ -47,7 +47,7 @@ export default function PageAbout(props: PageProps) {
             }`}
           >
             <Image
-              src="/linkedin-icon.svg"
+              src="/portfolio/linkedin-icon.svg"
               width={24}
               height={24}
               alt="linkedin icon"

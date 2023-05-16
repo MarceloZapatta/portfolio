@@ -36,7 +36,7 @@ export default function Header(props: HeaderProps) {
           /&gt;
         </a>
         <Image
-          src="/hamburguer.svg"
+          src="/portfolio/hamburguer.svg"
           width={24}
           height={24}
           priority
