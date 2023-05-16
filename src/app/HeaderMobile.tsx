@@ -43,7 +43,11 @@ export default function HeaderMobile(props: HeaderMobileProps) {
       <div className="container mx-auto px-11">
         <div className="flex flex-col gap-12 mt-8">
           {navItems.map((navItem) => (
-            <HeaderMobileItem key={navItem} active={navItem === activePage}>
+            <HeaderMobileItem
+              key={navItem}
+              active={navItem === activePage}
+              onClick={handleOnClose}
+            >
               {navItem}
             </HeaderMobileItem>
           ))}

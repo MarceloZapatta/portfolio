@@ -4,14 +4,21 @@ import { useTranslation } from "react-i18next";
 interface HeaderMobileItemProps {
   children: string;
   active: boolean;
+  onClick: () => void;
 }
 
 export default function HeaderMobileItem(props: HeaderMobileItemProps) {
-  const { children, active } = props;
+  const { children, active, onClick } = props;
   const { t } = useTranslation();
 
+  function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    e.preventDefault();
+    onClick();
+    window.location.href = `/#${t(["Menu." + children])}`;
+  }
+
   return (
-    <a href={`/#${t(["Menu." + children])}`} className={`flex text-white`}>
+    <a href="#" className={`flex text-white`} onClick={(e) => handleClick(e)}>
       <Image
         src="/command.svg"
         width={24}
