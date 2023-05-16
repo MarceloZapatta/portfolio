@@ -28,7 +28,7 @@ export default function Header(props: HeaderProps) {
     justify-between items-center px-4 bg-night min-w-full h-14"
       >
         <a
-          href={`#${t("Menu.Home")}`}
+          href={`/portfolio/#${t("Menu.Home")}`}
           className="text-white logo custom-cursor-pointer"
         >
           &lt;
