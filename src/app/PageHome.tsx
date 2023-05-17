@@ -1,12 +1,16 @@
+"use client";
+
 import "./PageHome.scss";
 import StringsEffect from "./StringsEffect";
 import PageTemplate from "./PageTemplate";
 import PageProps from "@/interfaces/page-props";
 import { useTranslation } from "react-i18next";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export default function PageHome(props: PageProps) {
   const { onVisible } = props;
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
 
   return (
     <PageTemplate name="Home" nextPageName="About" onVisible={onVisible}>
@@ -57,7 +61,7 @@ export default function PageHome(props: PageProps) {
           </div>
         </div>
         <div className="hidden lg:flex flex-1 justify-center items-center animate__animated animate__slideInRight animate__delay-5s">
-          <StringsEffect />
+          {isMobile ? null : <StringsEffect />}
         </div>
       </div>
     </PageTemplate>

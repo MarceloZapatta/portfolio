@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import PageTemplate from "./PageTemplate";
 import PageProps from "@/interfaces/page-props";

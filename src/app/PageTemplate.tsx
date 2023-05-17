@@ -13,8 +13,6 @@ interface PageTemplateProps {
   nextPageButtonInverted?: boolean;
 }
 
-//
-
 export default function PageTemplate(props: PageTemplateProps) {
   const { onVisible, name, nextPageName, children, nextPageButtonInverted } =
     props;

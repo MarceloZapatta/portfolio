@@ -1,13 +1,13 @@
+"use client";
+
 import PageProps from "@/interfaces/page-props";
 import PageTemplate from "./PageTemplate";
 import ProjectCard from "./ProjectCard";
 import { Project } from "@/interfaces/project";
 import ReactVisibilitySensor from "react-visibility-sensor";
-import { useTranslation } from "react-i18next";
 
 export default function PageProjects(props: PageProps) {
   const { onVisible } = props;
-  const { t } = useTranslation();
 
   const projects: Project[] = [
     {
