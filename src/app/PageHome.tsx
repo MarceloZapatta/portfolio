@@ -1,7 +1,7 @@
 "use client";
 
 import "./PageHome.scss";
-import StringsEffect from "./StringsEffect";
+import StringsEffect from "./components/StringsEffect";
 import PageTemplate from "./PageTemplate";
 import PageProps from "@/interfaces/page-props";
 import { useTranslation } from "react-i18next";

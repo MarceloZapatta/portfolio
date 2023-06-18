@@ -2,7 +2,7 @@
 
 import PageProps from "@/interfaces/page-props";
 import PageTemplate from "./PageTemplate";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./components/ProjectCard";
 import { Project } from "@/interfaces/project";
 import ReactVisibilitySensor from "react-visibility-sensor";
 

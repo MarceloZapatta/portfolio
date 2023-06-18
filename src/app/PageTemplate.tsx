@@ -1,8 +1,8 @@
 "use client";
 
 import ReactVisibilitySensor from "react-visibility-sensor";
-import Breadcomb from "./Breadcomb";
-import NextPageButton from "./NextPageButton";
+import Breadcomb from "./components/Breadcomb";
+import NextPageButton from "./components/NextPageButton";
 import { useTranslation } from "react-i18next";
 
 interface PageTemplateProps {

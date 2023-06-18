@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Header from "./Header";
-import SplashScreen from "./SplashScreen";
+import Header from "./components/Header";
+import SplashScreen from "./components/SplashScreen";
 import PageHome from "./PageHome";
 import PageAbout from "./PageAbout";
 import PageSkills from "./PageSkills";
