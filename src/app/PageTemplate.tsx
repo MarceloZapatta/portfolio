@@ -14,8 +14,10 @@ interface PageTemplateProps {
 }
 
 export default function PageTemplate(props: PageTemplateProps) {
-  const { onVisible, name, nextPageName, children, nextPageButtonInverted } =
-    props;
+  const { onVisible, name, nextPageName, children, nextPageButtonInverted } = {
+    nextPageButtonInverted: false,
+    ...props,
+  };
   const { t } = useTranslation();
 
   function handleChangeVisible(isVisible: Boolean) {
@@ -39,7 +41,3 @@ export default function PageTemplate(props: PageTemplateProps) {
     </div>
   );
 }
-
-PageTemplate.defaultProps = {
-  nextPageButtonInverted: false,
-};

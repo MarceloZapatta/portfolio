@@ -7,7 +7,7 @@ interface NextPageButtonProps {
 }
 
 export default function NextPageButton(props: NextPageButtonProps) {
-  const { children, inverted } = props;
+  const { children, inverted } = { inverted: false, ...props };
   const { t } = useTranslation();
 
   return (
@@ -26,7 +26,3 @@ export default function NextPageButton(props: NextPageButtonProps) {
     </a>
   );
 }
-
-NextPageButton.defaultProps = {
-  inverted: false,
-};
