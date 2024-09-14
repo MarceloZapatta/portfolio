@@ -47,6 +47,13 @@ export default function PageProjects(props: PageProps) {
       technologies: ["Next.JS"],
       url: "https://github.com.br",
     },
+    {
+      name: "Real Estate on Rails",
+      description:
+        "Simple API using Ruby on Rails with some main features of Rails",
+      technologies: ["Ruby", "Rails"],
+      url: "https://github.com/MarceloZapatta/real-estate-ruby-rails",
+    },
   ];
 
   return (
