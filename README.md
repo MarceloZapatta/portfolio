@@ -4,7 +4,6 @@ This is a portfolio `Code + Command Line` theme. Developed using Figma, Next.JS,
 
 ![5549aff5-7191-4bd2-a7c1-ce9e7f0f23e7](https://github.com/MarceloZapatta/portfolio/assets/39474221/9dd87bec-823c-46d8-89cd-238794ece07c)
 
-
 ## How to run
 
 ```javascript
@@ -34,3 +33,11 @@ Access localhost:3000/portfolio
 https://marcelozapatta.github.io/portfolio
 
 If you like this project feel free to use with credits and fork it :) Don't forget to give a star 🌟.
+
+## Deploy a new version
+
+Use the following command
+
+```bash
+yarn deploy
+```

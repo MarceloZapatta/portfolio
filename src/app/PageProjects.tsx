@@ -35,16 +35,23 @@ export default function PageProjects(props: PageProps) {
       url: "https://github.com/MarceloZapatta/portfolio",
     },
     {
-      name: "Tempo Real Notícias",
+      name: "Real Time News Backend",
       description: "News portal",
-      technologies: ["Puppeteer", "Nest.JS", "Next.JS"],
+      technologies: ["Puppeteer", "Nest.JS"],
       image: "/portfolio/projects/tempo-real-noticias.png",
-      url: "https://temporealnoticias.com.br",
+      url: "https://github.com/MarceloZapatta/temporealnoticias-api",
+    },
+    {
+      name: "Real Time News Frontend",
+      description: "News portal",
+      technologies: ["Next.JS"],
+      image: "/portfolio/projects/tempo-real-noticias.png",
+      url: "https://github.com/MarceloZapatta/temporealnoticias-front",
     },
     {
       name: "Tem Vegano",
       description: "In construction",
-      technologies: ["Next.JS"],
+      technologies: ["Laravel"],
       url: "https://github.com.br",
     },
     {
@@ -53,6 +60,18 @@ export default function PageProjects(props: PageProps) {
         "Simple API using Ruby on Rails with some main features of Rails",
       technologies: ["Ruby", "Rails"],
       url: "https://github.com/MarceloZapatta/real-estate-ruby-rails",
+    },
+    {
+      name: "Money Backend",
+      description: "A lumen application for finances and invoices",
+      technologies: ["Lumen"],
+      url: "https://github.com/MarceloZapatta/dinheiro-api",
+    },
+    {
+      name: "Money Frontend",
+      description: "A ionic application for finances and invoices",
+      technologies: ["Ionic"],
+      url: "https://github.com/MarceloZapatta/dinheiro-app",
     },
   ];
 
