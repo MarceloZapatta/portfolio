@@ -44,7 +44,7 @@ i18n
             intro:
               "Hello! I am a FullStack developer with over 5 years of professional experience. My expertise lies in technologies like",
             personal:
-              "Apart from my dedication to software development, I am also passionate about maintaining a vegan lifestyle 🌱. In my free time, I enjoy watching TV shows and embarking on adventures to discover new places around the world ⛰️. Inspired by my love for travel and work, I am planing to have an digital nomad lifestyle 💻",
+              "Apart from my dedication to software development. In my free time, I enjoy watching TV shows and embarking on adventures to discover new places around the world ⛰️.",
             cta: "If you're interested in delving deeper into my background and experience, I invite you to",
             "cta-take": "take a look at my full profile",
             buttonLinkedIn: "LinkedIn profile",
@@ -77,7 +77,7 @@ i18n
             intro:
               "Olá! Eu sou um FullStack developer com 5 anos de experiência. Possuo proficiência em ",
             personal:
-              "Além do meu comprometimento com o desenvolvimento de software, também sou apaixonado por manter um estilo de vida vegano 🌱. No meu tempo livre, gosto de assistir séries e embarcar em aventuras para descobrir novos lugares ao redor do mundo ⛰️. Inspirado pelo meu amor por viagens e trabalho, estou planejando ter um estilo de vida de nômade digital 💻",
+              "Além do meu comprometimento com o desenvolvimento de software. No meu tempo livre, gosto de assistir séries e embarcar em aventuras para descobrir novos lugares ao redor do mundo ⛰️.",
             cta: "Se você está interessado em conhecer mais sobre meu perfil e experiências, eu te convido a ",
             "cta-take": "acessar meu perfil completo",
             buttonLinkedIn: "Perfil LinkedIn",
